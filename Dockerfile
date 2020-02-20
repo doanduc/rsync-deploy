@@ -1,7 +1,7 @@
 FROM debian:9.5-slim
 
 RUN apt update
-RUN apt -yq install rsync openssh-client
+RUN apt -yq install rsync openssh-client curl git
 
 
 # Label
@@ -13,6 +13,7 @@ LABEL "com.github.actions.icon"="truck"
 LABEL "repository"="http://github.com/AEnterprise/rsync-deploy"
 LABEL "homepage"="https://github.com/AEnterprise/rsync-deploy"
 LABEL "maintainer"="AEnterprise <aenterprise@aenterprise.info>"
+
 
 
 ADD entrypoint.sh /entrypoint.sh
