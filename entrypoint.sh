@@ -11,7 +11,7 @@ sh -c "rsync $ARGS -e 'ssh -i $SSHPATH/key -o StrictHostKeyChecking=no -p $SERVE
 echo "$SSHPATH";
 #echo "test alert"
 
-echo SERVER_DEPLOY_STRING
+echo "$SERVER_DEPLOY_STRING";
 
 urlencode() {
     # urlencode <string>
